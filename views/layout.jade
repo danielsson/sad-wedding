@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		block title
+			title Sad Wedding
+		
+		block head
+
+		link(rel="stylesheet", href="normalize.css")
+		link(rel="stylesheet", href="skeleton.css")
+		link(rel="stylesheet", href="app.css")
+		link(href="http://fonts.googleapis.com/css?family=Raleway",rel="stylesheet",type="text/css")
+		
+		script(src="paraxify.min.js")
+
+
+	body
+		block body
+
+
+	script(type="text/javascript").
+		myParaxify = paraxify('.paraxify');
+		document.getElementById("front-cover").style.height = window.innerHeight - 200 + "px";
