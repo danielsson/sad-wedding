@@ -11,13 +11,16 @@
 }
 
 .navbar {
+    margin-top: 4em;
     list-style: none;
 }
 
 .navbar > li {
     float: right;
-    margin-top: 4em;
-    margin-left: 4em;
+}
+
+.navbar > li + li {
+    margin-right: 4em;
 }
 
 .navbar > li > a {
