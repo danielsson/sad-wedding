@@ -20,7 +20,11 @@ html
 
 
     script(type="text/javascript").
-        document.getElementById("front-cover").style.height = window.innerHeight - 200 + "px";
         if (!Modernizr.touch) {
+            document.getElementById("front-cover").style.height = window.innerHeight - 200 + "px";
             myParaxify = paraxify('.paraxify');
+        } else {
+            document.getElementById("front-cover").style.height = screen.height - 400 + "px";
         }
+
+}
