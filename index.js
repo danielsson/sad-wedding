@@ -1,19 +1,23 @@
 var express = require('express');
+var compression = require('compression')
 var app = express();
 
 app.set('view engine', 'jade');
 app.set('views', './views')
 
+
+app.use(compression());
+
 app.use(express.static('public', {
     index: false,
-    maxAge: 31556900
+    maxAge: 31556900000
 }))
 
 
 
 if (process.env.NODE_ENV == "production") {
     app.use('/', function (req, res, next) {
-        res.setHeader("Cache-Control", "public, max-age=172800")
+        res.setHeader("Cache-Control", "public, max-age=472800")
         next()
     })
 }

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/danielsson/sad-wedding",
   "dependencies": {
+    "compression": "^1.4.4",
     "express": "^4.12.3",
     "jade": "^1.9.2"
   }
