@@ -89,3 +89,7 @@ blockquote {
 .spaced_medium {
     margin-top: 50px;
 }
+
+small {
+    color: #bbbbbb;
+}
